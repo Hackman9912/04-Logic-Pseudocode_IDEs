@@ -1,6 +1,6 @@
 
 # Multiple Choice
-1. A(n)________is a set of instructions that a computer follows to perform a task.
+1.A(n)________is a set of instructions that a computer follows to perform a task.
 
 compiler
 
@@ -11,7 +11,7 @@ interpreter
 programming language
 
 
-2. The physical devices that a computer is made of are referred to as___________.
+2.The physical devices that a computer is made of are referred to as___________.
 
 <b>*hardware*</b>
 
@@ -22,7 +22,7 @@ the operating system
 tools
 
 
-3. The part of a computer that runs programs is called_____________.
+3.The part of a computer that runs programs is called_____________.
 
 RAM
 
@@ -33,7 +33,7 @@ main memory
 <b>*the CPU*</b>
 
 
-4. Today, CPUs are small chips known as____________.
+4.Today, CPUs are small chips known as____________.
 
 ENIACs
 
@@ -44,7 +44,7 @@ memory chips
 operating systems
 
 
-5. The computer stores a program while the program is running, as well as the data that the program is working with, in______.
+5.The computer stores a program while the program is running, as well as the data that the program is working with, in______.
 
 secondary storage
 
@@ -55,7 +55,7 @@ the CPU
 the microprocessor
 
 
-6. This is a volatile type of memory that is used only for temporary storage while a program is running.
+6.This is a volatile type of memory that is used only for temporary storage while a program is running.
 
 <b>*RAM*</b>
 
@@ -66,7 +66,7 @@ the disk drive
 the USB drive
 
 
-7. A type of memory that can hold data for long periods of time—even when there is no power to the computer––is called         .
+7.A type of memory that can hold data for long periods of time—even when there is no power to the computer––is called         .
 
 RAM
 
@@ -77,7 +77,7 @@ main memory
 CPU storage
 
 
-8. A component that collects data from people or other devices and sends it to the computer is called         .
+8.A component that collects data from people or other devices and sends it to the computer is called         .
 
 an output device
 
@@ -88,7 +88,7 @@ a secondary storage device
 main memory
 
 
-9. A video display is a(n)         .
+9.A video display is a(n)         .
 
 <b>*output device*</b>
 
@@ -99,7 +99,7 @@ secondary storage device
 main memory
 
 
-10. A___________-is enough memory to store a letter of the alphabet or a small number.
+10.A___________-is enough memory to store a letter of the alphabet or a small number.
 
 <b>*byte*</b>
 
@@ -110,7 +110,7 @@ switch
 transistor
 
 
-11. A byte is made up of eight         .
+11.A byte is made up of eight         .
 
 CPUs
 
@@ -121,7 +121,7 @@ variables
 <b>*bits*</b>
 
 
-11. In a(n)___________numbering system, all numeric values are written as sequences of 0s and 1s.
+11.In a(n)___________numbering system, all numeric values are written as sequences of 0s and 1s.
 
 hexadecimal
 
@@ -132,7 +132,7 @@ octal
 decimal
 
 
-12. A bit that is turned off represents the following value:         .
+12.A bit that is turned off represents the following value:         .
 
 1
 
@@ -143,7 +143,7 @@ decimal
 “no”
 
 
-13. A set of 128 numeric codes that represent the English letters, various punctuation marks, and other characters is____________.
+13.A set of 128 numeric codes that represent the English letters, various punctuation marks, and other characters is____________.
 
 binary numbering
 
@@ -154,7 +154,7 @@ Unicode
 ENIAC
 
 
-14. An extensive encoding scheme that can represent the characters of many of the languages in the world is_______________.
+14.An extensive encoding scheme that can represent the characters of many of the languages in the world is_______________.
 
 binary numbering
 
@@ -165,7 +165,7 @@ ASCII
 ENIAC
 
 
-15. Negative numbers are encoded using the____________technique.
+15.Negative numbers are encoded using the____________technique.
 
 <b>*two’s complement*</b>
 
@@ -176,7 +176,7 @@ ASCII
 Unicode
 
 
-16. Real numbers are encoded using the____________technique.
+16.Real numbers are encoded using the____________technique.
 
 two’s complement
 
@@ -187,7 +187,7 @@ ASCII
 Unicode
 
 
-17. The tiny dots of color that digital images are composed of are called_____________.
+17.The tiny dots of color that digital images are composed of are called_____________.
 
 bits
 
@@ -198,7 +198,7 @@ color packets
 <b>*pixels*</b>
 
 
-18. If you were to look at a machine language program, you would see______________.
+18.If you were to look at a machine language program, you would see______________.
 
 Java code
 
@@ -209,7 +209,7 @@ English words
 circuits
 
 
-19. In the_______________part of the fetch-decode-execute cycle, the CPU determines which operation it should perform.
+19.In the_______________part of the fetch-decode-execute cycle, the CPU determines which operation it should perform.
 
 fetch
 
@@ -220,7 +220,7 @@ execute
 immediately after the instruction is executed
 
 
-20. Computers can only execute programs that are written in_____________.
+20.Computers can only execute programs that are written in_____________.
 
 Java
 
@@ -231,7 +231,7 @@ assembly language
 C++
 
 
-21. The____________translates an assembly language program to a machine language program.
+21.The____________translates an assembly language program to a machine language program.
 
 <b>*assembler*</b>
 
@@ -242,7 +242,7 @@ translator
 interpreter
 
 
-22. The words that make up a high-level programming language are called___________.
+22.The words that make up a high-level programming language are called___________.
 
 binary instructions
 
@@ -253,7 +253,7 @@ commands
 <b>*key words*</b>
 
 
-23. The rules that must be followed when writing a program are called______________.
+23.The rules that must be followed when writing a program are called______________.
 
 <b>*syntax*</b>
 
@@ -264,7 +264,7 @@ key words
 operators
 
 
-24. A(n)_____________program translates a high-level language program into a separate machine language program.
+24.A(n)_____________program translates a high-level language program into a separate machine language program.
 
 assembler
 
