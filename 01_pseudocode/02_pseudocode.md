@@ -41,7 +41,7 @@ ISBN-10: 1-337-10207-5, ISBN-13: 978-1-337-10207-0
 ## Understanding Unnamed, Literal Constants
 
 **There are two types of constants**
-* Numeric constant (or literal numeric constant)
+**Numeric constant (or literal numeric constant)**
 * Contains numbers only
 * Number does not change
 
