@@ -6,7 +6,7 @@ syntax
 
 hardware
 
-logic
+**logic**
 
 fatal
 
