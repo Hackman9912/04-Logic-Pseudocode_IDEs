@@ -1,23 +1,32 @@
 # Checkpoint
 2.1 Who is a programmer’s customer?
+> The person the programmer is producing code for
 
 2.2 What is a software requirement?
+> What the customer wants the code to do
 
 2.3 What is an algorithm?
+> step-by-step directions to solve the problem
 
 2.4 What is pseudocode?
+> Fake code used as a model for programs. **mimics actual program functions**
 
 2.5 What is a flowchart?
+> A graphical representation of the code functions
 
 2.6 What are each of the following symbols in a flowchart?
 
 Oval
+> Start and end
 
 Parallelogram
+> Input/Output
 
 Rectangle
+> Some type of action
 
 2.7 What are the three operations that programs typically perform?
+> Input, Process Performed, Output
 
 2.8 What is an IPO chart?
 
@@ -28,18 +37,24 @@ Rectangle
 2.11 A string literal is usually enclosed inside a set of what characters?
 
 2.12 What is a variable?
+> storage locations in memory for data. One word no spaces, no punctuation, name vairables appropriately, do not let first character be a number, camelCasing is popular naming convention.
 
 2.13 Summarize three common rules for naming variables.
+> see above
 
 2.14 What variable naming convention do we follow in this book?
+> see above
 
 2.15 Look at the following pseudocode statement:
 
   Input temperature
-  
+
+>A temp is put in somehow 
+
 What happens when this statement executes?
 
 2.16 Who is the user?
+
 
 2.17 What is a prompt?
 

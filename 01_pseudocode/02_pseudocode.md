@@ -198,28 +198,29 @@ Programming Logic & Design (2017), 9th edition
 ## Demonstration Labs
 
 * Explain why each of the following names does or does not seem like a good variable name to represent a state sales tax rate. 
-  * stateTaxRate
-  * txRt
-  * t
-  * stateSalesTaxRateValue
-  * taxRate
-  * 1TaxRate
-  * moneyCharged
+  * stateTaxRate: **Good but Maybe a bit vague. What kind of tax?**
+  * txRt: **bad because too cryptic**
+  * t: **bad, too short, no definition**
+  * stateSalesTaxRateValue: **Decent, maybe too long.**
+  * taxRate: **same a the stateTaxRate**
+  * 1TaxRate: **Bad, starts with a number**
+  * moneyCharged: **decent, depends on the usage of the program could be confusing**
   
 * If productCost and productPrice are numeric variables, and productName is a string variable, which of the following statements are valid assignments? If a statement is not valid, explain why not.
-  * productCost = 100
-  * productPrice = productCost
-  * productPrice = productName
-  * productPrice = “24.95”
-  * 15.67 = productCost
-  * productCost = productPrice – 10
-  * productName = “mouse pad”
-  * productCost + 20 = productPrice
-  * productName = 3-inch nails
-  * productName = 43
-  * productName = productCost
+  * productCost = 100 >**good**
+  * productPrice = productCost >**good**
+  * productPrice = productName >**bad, cannot go string to number**
+  * productPrice = “24.95” >**bad, quotes make a string**
+  * 15.67 = productCost >**bad syntax should be right to left**
+  * productCost = productPrice – 10 >**valid**
+  * productName = “mouse pad” >**valid**
+  * productCost + 20 = productPrice >**operations must occur after equals sign**
+  * productName = 3-inch nails >**no quotes so bad**
+  * productName = 43 >**no, it needs quotes**
+  * productName = productCost >**productName is a string productCost is a number**
   
 * Draw a typical hierarchy chart for a program that produces a monthly bill for a cellphone customer.  Try to think of at least 10 separate modules that might be included. For example, one module might calculate the charge for daytime phone minutes used.
+
 
 * Draw the hierarchy chart and then plan the logic for a program that calculates a person’s body mass index (BMI). BMI is a statistical measure that compares a person’s body mass index (BMI). BMI is a statistical measure that compares a person’s weight and height.  The program uses three modules.  The first prompts a user for and accepts the user’s hight in inches. The second module accepts the user’s weight in pounds and converts the user’s height to meters and weight to kilograms. Then, it calculates BMI as weight in kilograms divided by height in meters squared, and displays the results.  There are 2.54 centimeters in an inch, 100 centimeters in a meter, 453.59 grams in a pound, and 1,000 grams in a kilogram.  Use named constants whenever you think they are appropriate. The last module displays the message *End of job.*
 
