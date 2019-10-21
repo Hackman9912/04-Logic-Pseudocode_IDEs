@@ -12,7 +12,7 @@ programming language
 
 The physical devices that a computer is made of are referred to as___________.
 
-*hardware*
+<b>*hardware*</b>
 
 software
 
@@ -28,13 +28,13 @@ secondary storage
 
 main memory
 
-*the CPU*
+<b>*the CPU*</b>
 
 Today, CPUs are small chips known as____________.
 
 ENIACs
 
-*microprocessors*
+<b>*microprocessors*</b>
 
 memory chips
 
@@ -46,13 +46,13 @@ secondary storage
 
 the CPU
 
-*main memory*
+<b>*main memory*</b>
 
 the microprocessor
 
 This is a volatile type of memory that is used only for temporary storage while a program is running.
 
-*RAM*
+<b>*RAM*</b>
 
 secondary storage
 
@@ -66,7 +66,7 @@ RAM
 
 main memory
 
-*secondary storage*
+<b>*secondary storage*</b>
 
 CPU storage
 
@@ -74,7 +74,7 @@ A component that collects data from people or other devices and sends it to the 
 
 an output device
 
-*an input device*
+<b>*an input device*</b>
 
 a secondary storage device
 
@@ -82,7 +82,7 @@ main memory
 
 A video display is a(n)         .
 
-*output device*
+<b>*output device*</b>
 
 input device
 
@@ -92,7 +92,7 @@ main memory
 
 A___________-is enough memory to store a letter of the alphabet or a small number.
 
-*byte*
+<b>*byte*</b>
 
 bit
 
@@ -108,13 +108,13 @@ instructions
 
 variables
 
-*bits*
+<b>*bits*</b>
 
 In a(n)___________numbering system, all numeric values are written as sequences of 0s and 1s.
 
 hexadecimal
 
-*binary*
+<b>*binary*</b>
 
 octal
 
@@ -126,7 +126,7 @@ A bit that is turned off represents the following value:         .
 
 −1
 
-*0*
+<b>*0*</b>
 
 “no”
 
@@ -134,7 +134,7 @@ A set of 128 numeric codes that represent the English letters, various punctuati
 
 binary numbering
 
-*ASCII*
+<b>*ASCII*</b>
 
 Unicode
 
@@ -146,13 +146,13 @@ binary numbering
 
 ASCII
 
-*Unicode*
+<b>*Unicode*</b>
 
 ENIAC
 
 Negative numbers are encoded using the____________technique.
 
-*two’s complement*
+<b>*two’s complement*</b>
 
 floating-point
 
@@ -164,7 +164,7 @@ Real numbers are encoded using the____________technique.
 
 two’s complement
 
-*floating-point*
+<b>*floating-point*</b>
 
 ASCII
 
@@ -178,13 +178,13 @@ bytes
 
 color packets
 
-*pixels*
+<b>*pixels*</b>
 
 If you were to look at a machine language program, you would see______________.
 
 Java code
 
-*a stream of binary numbers*
+<b>*a stream of binary numbers*</b>
 
 English words
 
@@ -194,7 +194,7 @@ In the_______________part of the fetch-decode-execute cycle, the CPU determines 
 
 fetch
 
-*decode*
+<b>*decode*</b>
 
 execute
 
@@ -206,13 +206,13 @@ Java
 
 assembly language
 
-*machine language*
+<b>*machine language*</b>
 
 C++
 
 The____________translates an assembly language program to a machine language program.
 
-*assembler*
+<b>*assembler*</b>
 
 compiler
 
@@ -228,11 +228,11 @@ mnemonics
 
 commands
 
-*key words*
+<b>*key words*</b>
 
 The rules that must be followed when writing a program are called______________.
 
-*syntax*
+<b>*syntax*</b>
 
 punctuation
 
@@ -244,7 +244,7 @@ A(n)_____________program translates a high-level language program into a separat
 
 assembler
 
-*compiler*
+<b>*compiler*</b>
 
 translator
 
