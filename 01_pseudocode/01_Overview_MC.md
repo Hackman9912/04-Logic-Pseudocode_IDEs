@@ -1,6 +1,6 @@
 
 # Multiple Choice
-A(n)________is a set of instructions that a computer follows to perform a task.
+1. A(n)________is a set of instructions that a computer follows to perform a task.
 
 compiler
 
@@ -10,7 +10,8 @@ interpreter
 
 programming language
 
-The physical devices that a computer is made of are referred to as___________.
+
+2. The physical devices that a computer is made of are referred to as___________.
 
 <b>*hardware*</b>
 
@@ -20,7 +21,8 @@ the operating system
 
 tools
 
-The part of a computer that runs programs is called_____________.
+
+3. The part of a computer that runs programs is called_____________.
 
 RAM
 
@@ -30,7 +32,8 @@ main memory
 
 <b>*the CPU*</b>
 
-Today, CPUs are small chips known as____________.
+
+4. Today, CPUs are small chips known as____________.
 
 ENIACs
 
@@ -40,7 +43,8 @@ memory chips
 
 operating systems
 
-The computer stores a program while the program is running, as well as the data that the program is working with, in______.
+
+5. The computer stores a program while the program is running, as well as the data that the program is working with, in______.
 
 secondary storage
 
@@ -50,7 +54,8 @@ the CPU
 
 the microprocessor
 
-This is a volatile type of memory that is used only for temporary storage while a program is running.
+
+6. This is a volatile type of memory that is used only for temporary storage while a program is running.
 
 <b>*RAM*</b>
 
@@ -60,7 +65,8 @@ the disk drive
 
 the USB drive
 
-A type of memory that can hold data for long periods of time—even when there is no power to the computer––is called         .
+
+7. A type of memory that can hold data for long periods of time—even when there is no power to the computer––is called         .
 
 RAM
 
@@ -70,7 +76,8 @@ main memory
 
 CPU storage
 
-A component that collects data from people or other devices and sends it to the computer is called         .
+
+8. A component that collects data from people or other devices and sends it to the computer is called         .
 
 an output device
 
@@ -80,7 +87,8 @@ a secondary storage device
 
 main memory
 
-A video display is a(n)         .
+
+9. A video display is a(n)         .
 
 <b>*output device*</b>
 
@@ -90,7 +98,8 @@ secondary storage device
 
 main memory
 
-A___________-is enough memory to store a letter of the alphabet or a small number.
+
+10. A___________-is enough memory to store a letter of the alphabet or a small number.
 
 <b>*byte*</b>
 
@@ -100,7 +109,8 @@ switch
 
 transistor
 
-A byte is made up of eight         .
+
+11. A byte is made up of eight         .
 
 CPUs
 
@@ -110,7 +120,8 @@ variables
 
 <b>*bits*</b>
 
-In a(n)___________numbering system, all numeric values are written as sequences of 0s and 1s.
+
+11. In a(n)___________numbering system, all numeric values are written as sequences of 0s and 1s.
 
 hexadecimal
 
@@ -120,7 +131,8 @@ octal
 
 decimal
 
-A bit that is turned off represents the following value:         .
+
+12. A bit that is turned off represents the following value:         .
 
 1
 
@@ -130,7 +142,8 @@ A bit that is turned off represents the following value:         .
 
 “no”
 
-A set of 128 numeric codes that represent the English letters, various punctuation marks, and other characters is____________.
+
+13. A set of 128 numeric codes that represent the English letters, various punctuation marks, and other characters is____________.
 
 binary numbering
 
@@ -140,7 +153,8 @@ Unicode
 
 ENIAC
 
-An extensive encoding scheme that can represent the characters of many of the languages in the world is_______________.
+
+14. An extensive encoding scheme that can represent the characters of many of the languages in the world is_______________.
 
 binary numbering
 
@@ -150,7 +164,8 @@ ASCII
 
 ENIAC
 
-Negative numbers are encoded using the____________technique.
+
+15. Negative numbers are encoded using the____________technique.
 
 <b>*two’s complement*</b>
 
@@ -160,7 +175,8 @@ ASCII
 
 Unicode
 
-Real numbers are encoded using the____________technique.
+
+16. Real numbers are encoded using the____________technique.
 
 two’s complement
 
@@ -170,7 +186,8 @@ ASCII
 
 Unicode
 
-The tiny dots of color that digital images are composed of are called_____________.
+
+17. The tiny dots of color that digital images are composed of are called_____________.
 
 bits
 
@@ -180,7 +197,8 @@ color packets
 
 <b>*pixels*</b>
 
-If you were to look at a machine language program, you would see______________.
+
+18. If you were to look at a machine language program, you would see______________.
 
 Java code
 
@@ -190,7 +208,8 @@ English words
 
 circuits
 
-In the_______________part of the fetch-decode-execute cycle, the CPU determines which operation it should perform.
+
+19. In the_______________part of the fetch-decode-execute cycle, the CPU determines which operation it should perform.
 
 fetch
 
@@ -200,7 +219,8 @@ execute
 
 immediately after the instruction is executed
 
-Computers can only execute programs that are written in_____________.
+
+20. Computers can only execute programs that are written in_____________.
 
 Java
 
@@ -210,7 +230,8 @@ assembly language
 
 C++
 
-The____________translates an assembly language program to a machine language program.
+
+21. The____________translates an assembly language program to a machine language program.
 
 <b>*assembler*</b>
 
@@ -220,7 +241,8 @@ translator
 
 interpreter
 
-The words that make up a high-level programming language are called___________.
+
+22. The words that make up a high-level programming language are called___________.
 
 binary instructions
 
@@ -230,7 +252,8 @@ commands
 
 <b>*key words*</b>
 
-The rules that must be followed when writing a program are called______________.
+
+23. The rules that must be followed when writing a program are called______________.
 
 <b>*syntax*</b>
 
@@ -240,7 +263,8 @@ key words
 
 operators
 
-A(n)_____________program translates a high-level language program into a separate machine language program.
+
+24. A(n)_____________program translates a high-level language program into a separate machine language program.
 
 assembler
 
