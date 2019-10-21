@@ -4,7 +4,7 @@ A(n)________is a set of instructions that a computer follows to perform a task.
 
 compiler
 
-*program*
+<b>*program*<b>
 
 interpreter
 
