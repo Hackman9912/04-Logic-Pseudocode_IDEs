@@ -303,14 +303,131 @@ For each of the following Boolean expressions, decide whether the statement is t
 
 * Design a flowchart or pseudocode for a program that accepts three numbers from a user and displays a message if the sum of any two numbers equals the third. 
 
-* ShoppingBay is an online auction service that requires several reports. Data for each auctioned item includes an ID number, item description, length of auction in days, and minimum required bid. Design a flowchart or pseudocode for the following: 
+* ShoppingBay is an online auction service that requires several reports. Data for each auctioned item includes an **ID number, item description, length of auction in days, and minimum required bid**. Design a flowchart or pseudocode for the following: 
 
   * A program that accepts data for one auctioned item. Display data for an auction only if the minimum required bid is more than $250.00. 
-  * A program that continuously accepts auction item data until a sentinel value is entered and displays all data for auctions in which the minimum required bid is more than $300.00. 
-  * A program that continuously accepts auction item data and displays data for every auction in which there are no bids yet (in other words, the minimum bid is $0.00) and the length of the auction is seven days or less. 
-  * A program that continuously accepts auction data and displays data for every auction in which the length is between 14 and 28 days inclusive. 
-  * A program that prompts the user for a maximum required bid, and then continuously accepts auction data and displays data for every auction in which the minimum bid is less than or equal to the amount entered by the user.
 
+  ```
+  start
+    //  Declarations
+            num idNumber
+    num numDays
+    num minReqBid
+    string itemDesc
+  // num MIN_BID = 250
+
+  Declare Integer idNumber
+  Declare Integer numDays
+  Declare Real minReqBid
+  Declare String itemDesc
+  CONSTANT Integer MIN_BID = 250
+        GetMerch()
+        ReqMin()
+        
+  stop
+
+    GetMerch()
+        Display “ Online Auction Program”
+        Display “ Enter Id: “
+        Input idNumber
+        Display “ Enter Description: “
+        Input itemDesc
+        Display “Enter Length in Days: “
+        Input numdays
+        Display “ Enter Minimum Bid: “
+        Input minReqBid
+
+        //output “Online Auction program”
+        //input idNumber, itemDesc, numDays, minReqBid
+    return
+
+    ReqMin()
+        if minReqBid > MIN_BID then
+            output idNumber, itemDesc, numDays, minReqBid
+        endif   
+    return
+  ```
+
+  * A program that continuously accepts auction item data until a sentinel value is entered and displays all data for auctions in which the minimum required bid is more than $300.00. 
+
+ ```
+  Start
+    Declarations
+      num idNumber
+      num numDays
+      string itemDesc
+      num MIN_BID = 300
+
+    Declare Integer idNumber
+    Declare Integer numDays
+    Declare String item Desc
+    Declare Real minReqBid
+    CONSTANT Integer MIN_BID = 300
+      GetMerch()
+      ReqMin()
+
+  Stop
+
+      GetMerch()
+        Display "Online Auction Program"
+        Display "Enter ID:"
+        Input idNumber
+        Display "Enter Description:"
+        Input itemDesc
+        Display "Enter Length in Days:
+        Input numDays
+        Display "Enter Minimum Bid:"
+        Input minReqBid
+
+        //output "Online Auction program"
+        //
+
+
+ ```
+
+  
+
+  
+
+  * A program that continuously accepts auction item data and displays data for every auction in which there are no bids yet (in other words, the minimum bid is $0.00) and the length of the auction is seven days or less. 
+
+  
+
+  * A program that continuously accepts auction data and displays data for every auction in which the length is between 14 and 28 days inclusive. 
+
+  * A program that prompts the user for a maximum required bid, and then continuously accepts auction data and displays data for every auction in which the minimum bid is less than or equal to the amount entered by the user.
+  
+
+---
+---
+
+```
+Start
+  Declarations
+      num firstNum
+      num secondNum
+      num thirdNum
+     string MSG = "Got it!"
+    GetNum()
+    Calc()
+    finish()
+  stop
+
+  GetNum()
+    output "Enter three numbers: "
+    input firsNum, secondNum, thirdNum
+  return
+
+  Calc()
+    if ((firstNum + secondNum) = thirdNum) OR
+       ((secondNum + thirdNum) = firstNum) OR
+       ((firstNum + thirdNum) = secondNum) then
+       output MSG
+    endif
+return
+```
+---
+---
 * The Drive-Rite Insurance Company provides automobile insurance policies for drivers. Design a flowchart or pseudocode for the following: 
   * A program that accepts insurance policy data, including a policy number, customer last name, customer first name, age, premium due date (month, day, and year), and number of driver accidents in the last three years. If an entered policy number is not between 1000 and 9999 inclusive, set the policy number to O. If the month is not between 1 and 12 inclusive, or the day is not correct for the month (for example, not between 1 and 31 for January or 1 and 29 for February), set the month, day, and year to 0. Display the policy data after any revisions have been made. 
   * A program that continuously accepts policy holders' data until a sentinel value has been entered, and displays the data for any policy holder over 40 years old. 
