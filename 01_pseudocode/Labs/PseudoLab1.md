@@ -28,12 +28,11 @@ A mobile phone app allows a user to press a button that starts a timer that coun
 * If the programmer translates the following pseudocode to an actual programming language, a syntax errror is likely to occur.  Can you find the error?
 
 ```
-Declare String 1stPrize
-
+Declare String firstPrize
+// 1stPrize should be firstPrize
 Display "Enter the award for first prize."
-Input 1stPrize
-
-Display "The first prize winner will receive "' 1stPrize
+Input firstPrize
+Display "The first prize winner will receive $", firstPrize
 ```
 
 ---
@@ -49,7 +48,8 @@ Input lowest
 Display "Enter the highest score."
 Input highest
 
-Set average = low + high/2
+Set average = (lowest + highest) / 2
+// should be (lowest + highest) / 2
 Display "The average is ", average, "."
 
 ```
@@ -59,10 +59,10 @@ Display "The average is ", average, "."
 * Find the error in the following pseudocode
 
 ```
+Declare Integer length
 Display "Enter the length of the room."
 Input length 
-Declare Integer length
-
+// Declare Integer length needs to be at the top
 ```
 
 ---
@@ -71,8 +71,8 @@ Declare Integer length
 
 ```
 Declare Integer value1, value2, value3, sum
-Set sum= value1 + value2 + value3
 
+// Set sum = value1 + value2 + value3 should follow the inputs
 Display "Enter the first value."
 Input value1
 
@@ -81,6 +81,8 @@ Input value2
 
 Display "Enter the third value."
 Input value3
+
+Set sum = value1 + value2 + value3
 
 Display "The sum of numbers is ", sum
 
@@ -92,8 +94,10 @@ Display "The sum of numbers is ", sum
 
 ```
 Declare Real pi
-Set 3.14159265 = pi
-Display "The value of pi is ". pi
+Set pi = 3.14159265
+// pi should come before the number
+Display "The value of pi is ", pi
+// . should be a ,
 ```
 
 ---
@@ -101,11 +105,12 @@ Display "The value of pi is ". pi
 * Find the error in the following pseudocode.
 
 ```
-Constant Real GRAVITY = 9.81
+Declare Real gravity = 9.81
+// Should be Declare and not Constant and not all caps gravity. All CAPS usually are constants
 Display "Rates of acceleration of an objet in free fall:"
-Display "Earth: ", GRAVITY, " meters per second every second."
-Set GRAVITY = 1.63
-Display "Moon: ", GRAVITY, " meters per second every second."
+Display "Earth: ", gravity, " meters per second every second."
+Set gravity = 1.63
+Display "Moon: ", gravity, " meters per second every second."
 ```
 
 ---
