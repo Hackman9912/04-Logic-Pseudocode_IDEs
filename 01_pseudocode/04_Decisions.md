@@ -309,13 +309,7 @@ For each of the following Boolean expressions, decide whether the statement is t
 
   ```
   start
-    //  Declarations
-            num idNumber
-    num numDays
-    num minReqBid
-    string itemDesc
-  // num MIN_BID = 250
-
+    
   Declare Integer idNumber
   Declare Integer numDays
   Declare Real minReqBid
@@ -352,12 +346,7 @@ For each of the following Boolean expressions, decide whether the statement is t
 
  ```
   Start
-    Declarations
-      num idNumber
-      num numDays
-      string itemDesc
-      num MIN_BID = 300
-
+    
     Declare Integer idNumber
     Declare Integer numDays
     Declare String item Desc
@@ -380,9 +369,16 @@ For each of the following Boolean expressions, decide whether the statement is t
         Input minReqBid
 
         //output "Online Auction program"
-        //
+        //input idNumber, itemDesc, numDays, minReqBid
+    Return
 
-
+    ReqMin()
+        If minReqBid > MIN_BID then
+          ouput idNumber, itemDesc, numDays, minReqBid
+        Else
+          CALL GetMerch() then ReqMin()
+        EndIf
+    Return
  ```
 
   
@@ -391,7 +387,42 @@ For each of the following Boolean expressions, decide whether the statement is t
 
   * A program that continuously accepts auction item data and displays data for every auction in which there are no bids yet (in other words, the minimum bid is $0.00) and the length of the auction is seven days or less. 
 
-  
+  ```
+  Start
+    
+    Declare Integer idNumber
+    Declare Integer numDays
+    Declare String item Desc
+    Declare Real minReqBid
+    CONSTANT Integer MIN_BID = 0
+    CONSTANT Integer MAX_DAY = 7
+      GetMerch()
+      ReqMin()
+
+  Stop
+
+      GetMerch()
+        Display "Online Auction Program"
+        Display "Enter ID:"
+        Input idNumber
+        Display "Enter Description:"
+        Input itemDesc
+        Display "Enter Length in Days:
+        Input numDays
+        Display "Enter Minimum Bid:"
+        Input minReqBid
+
+        //output "Online Auction program"
+        //input idNumber, itemDesc, numDays, minReqBid
+    Return
+
+    ReqMin()
+        If minReqBid == MIN_BID AND numDays <= MAX_DAY then
+          ouput idNumber, itemDesc, numDays, minReqBid
+          CALL GetMerch() then ReqMin()
+        EndIf
+    Return
+ ```
 
   * A program that continuously accepts auction data and displays data for every auction in which the length is between 14 and 28 days inclusive. 
 
