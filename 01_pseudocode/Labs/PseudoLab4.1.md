@@ -156,7 +156,9 @@ The total cost of the paint job
 ```
 Start
 
-    Declare
+    Declare integer paintGallons
+    Declare integer laborHours
+    Declare real
 ```
 
 ## Monthly Sales Tax
