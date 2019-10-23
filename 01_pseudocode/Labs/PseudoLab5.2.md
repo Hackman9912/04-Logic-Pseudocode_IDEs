@@ -4,7 +4,38 @@
 
 A bug collector collects bugs every day for seven days. Design a program that keeps a running total of the number of bugs collected during the seven days. The loop should ask for the number of bugs collected for each day, and when the loop is finished, the program should display the total number of bugs collected.
 
+```
 
+Start module()
+
+    Declare integer numBug
+    Declare integer totBug
+    Declare integer day
+    Constant Integer MAX_VALUE = 7
+    Set day = 1
+    Set totBug = 0
+
+    While day < MAX_VALUE
+
+        Display "Input the number of bugs you caught today"
+        Input = numBug
+        Call bugTotal()
+        Set day = day + 1
+    
+    End While
+
+    Display "Here is your weekly total", totBug
+
+End module()
+
+    bugTotal()
+
+        Set totBug = numBug + totBug
+
+    End Module
+
+
+```
 
 # Calories Burned
 
