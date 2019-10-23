@@ -4,7 +4,42 @@
 
 Design a program that prompts the user to enter a number within the range of 1 through 10. The program should display the Roman numeral version of that number. If the number is outside the range of 1 through 10, the program should display an error message.
 
+```
+Start
+    
+    Display "Input your number"
+    Input realNumber
 
+    Select realNumber
+
+        Case 1:
+            Display "I"
+        Case 2:
+            Display "II"
+        Case 3:
+            Display "III"
+        Case 4:
+            Display "IV"
+        Case 5:
+            Display "V"
+        Case 6:
+            Display "VI"
+        Case 7:
+            Display "VII"
+        Case 8:
+            Display "VIII"
+        Case 9:
+            Display "IX"
+        Case 10:
+            Display "X"
+        Default:
+            Display "Invalid input, try again"
+
+    End Select
+
+Stop
+
+```
 
 
 # Areas of Rectangles

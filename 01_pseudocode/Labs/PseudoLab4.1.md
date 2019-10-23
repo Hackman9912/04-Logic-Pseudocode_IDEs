@@ -7,8 +7,8 @@ Design a modular program that asks the user to enter a distance in kilometers, a
 
 ```
 Start
-    Declare integer mile
-    Declare integer kilo
+    Declare real mile
+    Declare real kilo
 
     Display "Enter the distance in kilometers"
     Input kilo
@@ -126,6 +126,35 @@ Stop
 
 Many financial experts advise that property owners should insure their homes or buildings for at least 80 percent of the amount it would cost to replace the structure. Design a modular program that asks the user to enter the replacement cost of a building and then displays the minimum amount of insurance he or she should buy for the property.
 
+
+```
+Start
+
+    Declare integer repCost
+    Declare integer minIns
+
+    inDisplay()
+    insMin()
+
+Stop
+
+    inDisplay()
+
+        Display "Input the replacement value of your property"
+        Input repCost
+
+    return
+
+    insMin()
+
+        Set minIns = repCost * .8
+        Display "Here is the minimum insurance you need:", minIns
+
+    return
+
+```
+
+
 ## Automobile Costs
 
 Design a modular program that asks the user to enter the monthly costs for the following expenses incurred from operating his or her automobile: loan payment, insurance, gas, oil, tires, and maintenance. The program should then display the total monthly cost of these expenses, and the total annual cost of these expenses.
@@ -133,6 +162,37 @@ Design a modular program that asks the user to enter the monthly costs for the f
 ## Property Tax
 
 A county collects property taxes on the assessment value of property, which is 60 percent of the property’s actual value. For example, if an acre of land is valued at $10,000, its assessment value is $6,000. The property tax is then 64¢ for each $100 of the assessment value. The tax for the acre assessed at $6,000 will be $38.40. Design a modular program that asks for the actual value of a piece of property and displays the assessment value and property tax
+
+
+```
+Start
+
+    Declare real assVal
+    Declare real actVal 
+    Declare real propTax
+    Set assVal = actVal * 0.6
+    Set showDat = assVal, propTax
+
+    Display "Please input your actual property value"
+    Input actVal
+
+     Call taxProp()
+
+    Display "Here is the requested information", showDat
+
+Stop
+
+    taxProp()
+
+        Set byHundo = assVal/100
+        Set propTax = byHundo * .64
+
+    return
+
+
+
+```
+
 
 ## Stadium Seating
 
@@ -157,8 +217,52 @@ The total cost of the paint job
 Start
 
     Declare integer paintGallons
-    Declare integer laborHours
-    Declare real
+    Declare real laborHours
+    Declare real laborCost
+    Declare real paintCost
+    Declare real actualCost
+    Declare real sqFt
+    Declare real paintAmt
+    Declare real paintVal
+    Set sqFtGallon = 115
+    Set paintDay = 8
+    Set hourRate = 20
+    Set showAll = paintGallons, laborHours, laborCost, paintVal, actualCost
+
+    Display "Enter the square feet of the wall space to be painted"
+    Input sqFt
+
+    Display "Enter the cost of the paint per a gallon you will be using"
+    Input paintCost
+
+    paintPrice()
+    hourCost()
+    totalCost()
+
+Stop
+
+    // The cost of the paint
+    paintPrice()
+
+        Set paintAmt = sqFt / sqFtGallon
+        Set paintVal = paintAmt * paintCost
+
+    return
+
+    // The cost of the labor
+    hourCost()
+
+        Set laborHours = paintAmt * paintDay
+        Set laborCost = laborHours * hourRate
+        
+    return
+
+    // The total cost
+    totalCost()
+    Set actualCost = laborCost + paintVal
+    Display "Here is your breakdown", showAll
+
+    return
 ```
 
 ## Monthly Sales Tax
