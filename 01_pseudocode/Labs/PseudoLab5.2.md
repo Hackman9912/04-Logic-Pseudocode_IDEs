@@ -96,7 +96,7 @@ Module main()
         Display "Do you have other expenses (Y for yes and N for no)"
         Input doAnother
 
-    While doAnother == N OR doAnother == N
+    While doAnother == N OR doAnother == n
 
     Call howsMoney()
 

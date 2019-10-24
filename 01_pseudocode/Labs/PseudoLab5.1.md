@@ -116,6 +116,21 @@ End Module
 * Design a For loop that calculates the total of the following series of numbers:
 ![image](https://user-images.githubusercontent.com/47218880/67423054-31740800-f599-11e9-9565-031c1f729e1c.png)
 
+
+```
+Declare Integer denominator, numerator
+Declare Real value, total
+Set denominator = 30
+Set total = 0
+   For numerator = 1 To 30
+      Set value = numerator / denominator
+      Set total = total + value
+      Set denominator = denominator - 1
+   End For
+Display total
+
+```
+
 * Design a nested loop that displays 10 rows of # characters. There should be 15 # characters in each row.
 
 * Convert the While loop in the following code to a Do-While loop:
