@@ -2,13 +2,72 @@
 
 Design an algorithm that prompts the user to enter a positive nonzero number and validates the input.
 
+
+```
+Display "Enter a positive non-zero number"
+Input value
+
+If value > 0 Then
+
+   Return
+
+Else
+
+   Display "You suck, try again"
+   Input value
+
+End If
+
+```
 Design an algorithm that prompts the user to enter a number in the range of 1 through 100 and validates the input.
+
+```
+Display "Input a number between 1 and 0"
+Input value
+
+While value < 1 OR value > 100
+   Display "Please put a number in between 1 and 100"
+   Input value
+
+End While
+
+
+```
 
 Design an algorithm that prompts the user to enter “yes” or “no” and validates the input. (Use a case-insensitive comparison.)
 
-Design an algorithm that prompts the user to enter a number that is greater than 99 and validates the input.
 
+```
+Display "Enter 'yes' or enter 'no'
+Input answer
+
+While toLower(answer) != "yes" AND toLower(answer) != "no"
+   Display "Please answer yes or no."
+   Input answer
+
+End While
+```
+Design an algorithm that prompts the user to enter a number that is greater than 99 and validates the input.
+```
+Display "Please enter a number greater than 99"
+Input answer
+
+While answer <= 99
+   Display "Please enter a number greater than 99"
+   Input answer
+
+End While
+```
 Design an algorithm that prompts the user to enter a secret word. The secret word should be at least 8 characters long. Validate the input.
+
+```
+Display "Please enter a secret word that is at least 8 characters long"
+Input word
+
+While length(word) < 8
+   Display "Enter a secret word that is at least 8 characters long!"
+   Input word
+```
 
 # Debugging Exercises
 
@@ -23,7 +82,7 @@ Display "Enter a value between 1 and 10."
 Input value
 
 // Make sure the value is between 1 and 10.
-While value < 1 AND value > 10
+> While value < 1 OR value > 10
    Display "ERROR: The value must be between 1 and 10."
    Display "Enter a value between 1 and 10."
    Input value
@@ -44,6 +103,7 @@ Input amount
 While amount < 0
    Display "ERROR: The dollar amount cannot be less than 0."
    Display "Enter a dollar amount."
+  > Input amount
 End While
 ```
 The following pseudocode works, but it performs a case-sensitive validation of the user’s input. How could the algorithm be improved so the user does not have to pay attention to capitalization when entering a name?
@@ -64,4 +124,6 @@ While choice != "Lisa" AND choice != "Tim"
    Display "Would you like to nominate Lisa or Tim?"
    Input response
 End While
+
+>Should use toLower
 ```

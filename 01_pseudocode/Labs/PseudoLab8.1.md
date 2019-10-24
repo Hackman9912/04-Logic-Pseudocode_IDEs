@@ -24,6 +24,45 @@ Once correct data has been entered, the program should calculate and display the
 ![image](https://user-images.githubusercontent.com/47218880/67504468-0ba93a80-f64f-11e9-85d0-f080ac66a64a.png)
 
 Some nutritionists classify a food as “low fat” if less than 30 percent of its calories come from fat. If the results of this formula are less than 0.3, the program should display a message indicating the food is low in fat.
+```
+Module main()
+
+	Declare integer fatGrams, fat9
+	Declare real calories, fatCalories
+
+	Display "Please put in the number of fat grams and calories in your food"
+	Display "Input fat grams now"
+	Input fatGrams
+
+	While fatGrams < 0 
+		Display "Enter a valid number of fat grams"
+		Input fatGrams
+	End While
+
+	Set fat9 = fatGrams * 9
+
+	Display "Please put in the number of calories in your food"
+	Input calories
+
+	While calories < 0 OR calories > fat9
+		Display "Enter a valid number of calories:
+		Input calories
+	End While
+
+	Set fatCalories = fat9 / calories
+
+	Display "Your food is", fatCalories, "percent fat"
+
+	If fatCalories < 0.3 then
+		Display "Your food is low in fat!"
+	Else
+		Display "Your food is fatty, fatty."
+	End If
+
+End Module
+
+```
+
 
 ## Speeding Violation Calculator
 
@@ -33,6 +72,37 @@ The speed limit should be at least 20, but not greater than 70.
 
 The driver’s speed should be at least the value entered for the speed limit ­(otherwise the driver was not speeding).
 Once correct data has been entered, the program should calculate and display the number of miles per hour over the speed limit that the driver was doing.
+
+```
+Module main()
+
+	Declare integer speedLimit, spdrSpd, diff
+
+	Display "Enter the speed limit"
+	Input speedLimit
+
+	While speedLimit < 20 OR speedLimit >70
+
+    	Display "Please enter a valid speed limit between 20 and 70"
+    	Input answer
+
+	End While
+
+	Display "Enter the speed of the speeder"
+	Input spdrSpd
+
+	While spdrSpd <= speedLimit
+
+		Display "The speed limit was", speedLimit, "Please enter a speeding speed"
+		Input spdrSpd
+
+	End While
+
+	Set diff = spdrSpd - speedLimit
+	Display "Your speeder was doing", diff, "over the speed limit."
+
+End Module
+```
 
 # Rock, Paper, Scissors Modification (MANDATORY)
 
@@ -60,8 +130,26 @@ End Module
 
 // The getNumber module gets an integer
 Module getNumber(Integer Ref inputAnswer)
-		Display “Enter 1 for rock, 2 for paper, 3 for scissors:  “
+		Display “Enter rock, paper, scissors:  “
 		Input inputAnswer
+
+		While toLower(inputAnswer) != "rock" AND toLower(inputAnswer) != "paper" AND toLower(inputAnswer) != "scissors"
+   			Display "Please answer 'rock', 'paper', or 'scissors'."
+   			Input inputAnswer
+		End While
+
+		If toLower(inputAnswer) == rock Then
+			Set inputAnswer = 1
+		Else
+			If toLower(inputAnswer) == paper Then
+				Set inputAnswer = 2
+			End If
+		Else
+			If toLower(inputAnswer) == scissors Then
+				Set inputAnswer = 3
+			End If
+		
+		End If
 End Module
 
 // The showWinner module shows if number is a prime
