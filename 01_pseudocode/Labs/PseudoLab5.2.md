@@ -15,7 +15,7 @@ Start module()
     Set day = 1
     Set totBug = 0
 
-    While day < MAX_VALUE
+    While day <= MAX_VALUE
 
         Display "Input the number of bugs you caught today"
         Input = numBug
