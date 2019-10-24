@@ -8,6 +8,37 @@ The area of a rectangle is calculated according to the following formula:
 
 Design a function that accepts a rectangle’s width and length as arguments and returns the rectangle’s area. Use the function in a program that prompts the user to enter the rectangle’s width and length, and then displays the rectangle’s area.
 
+```
+
+Module main()
+
+  Declare real width
+  Declare real length
+
+  Display "To calculate the area of a rectangle, enter length"
+  Display "and width when prompted."
+  Display "Enter the length:"
+  Input length
+  Display "Enter the width:"
+  Input width
+
+  Display "Here is your result.", Call area
+
+End Module
+
+Function Real area(width length)
+
+    Declare real area
+
+    Set area = width * length
+    Return area
+
+End Function
+
+
+
+```
+
 ## Feet to Inches
 
 One foot equals 12 inches. Design a function named feetToInches that accepts a number of feet as an argument, and returns the number of inches in that many feet. Use the function in a program that prompts the user to enter a number of feet and then displays the number of inches in that many feet.
