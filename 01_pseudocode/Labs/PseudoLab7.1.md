@@ -9,12 +9,11 @@ The area of a rectangle is calculated according to the following formula:
 Design a function that accepts a rectangle’s width and length as arguments and returns the rectangle’s area. Use the function in a program that prompts the user to enter the rectangle’s width and length, and then displays the rectangle’s area.
 
 ```
-
 Module main()
 
-  Declare real width
-  Declare real length
+  Declare real width, length, result
 
+  // Get the length and width
   Display "To calculate the area of a rectangle, enter length"
   Display "and width when prompted."
   Display "Enter the length:"
@@ -22,7 +21,11 @@ Module main()
   Display "Enter the width:"
   Input width
 
-  Display "Here is your result.", Call area
+  // Get the area
+  Set result = area(length, width)
+
+  // Display the result
+  Display "Here is your result.", result
 
 End Module
 
@@ -34,14 +37,41 @@ Function Real area(width length)
     Return area
 
 End Function
-
-
-
 ```
 
 ## Feet to Inches
 
 One foot equals 12 inches. Design a function named feetToInches that accepts a number of feet as an argument, and returns the number of inches in that many feet. Use the function in a program that prompts the user to enter a number of feet and then displays the number of inches in that many feet.
+
+
+```
+Module main()
+
+  Declare real feet, inches
+
+  //Get the feet
+  Display "To get the feet converted to inches, enter the feet",
+  Input feet
+
+  //Convert feet to inches
+
+  Set inches = feetInches(feet)
+
+  Display "Here are your results in inches", inches, "in", feet, "feet"
+
+End Module
+
+Function Real feetInches(feet)
+
+  Declare real result
+  Set Constant IN_FT = 12
+
+  Set result = feet / IN_FT
+  Return result
+
+End Function
+
+```
 
 ## Math Quiz
 
@@ -51,6 +81,54 @@ Design a program that gives simple math quizzes. The program should display two 
 + 129
 ```
 The program should allow the student to enter the answer. If the answer is correct, a message of congratulations should be displayed. If the answer is incorrect, a message showing the correct answer should be displayed.
+
+```
+
+Module main()
+
+  Declare integer num1, num2, answ, userAnsw
+
+  Set num1 = randNum()
+  Set num2 = randNum()
+  Set answ = sum(num1, num2)
+
+  Display "Answer the addition problem shown"
+  Display num1, "+", num2, "equals"
+  Input userAnsw
+
+  If andsw != userAnsw Then
+
+    Display "Congratulations you rock!"
+
+  Else
+
+    Display "Sorry that is not correct", answ, "Is the answer."
+
+  End If
+
+End Module
+
+Function Integer randNum()
+
+  Declare integer number
+
+  Set number = random(1, 9999)
+
+  Return number
+
+End Function
+
+Function Integer sum(num1, num2)
+
+  Declare integer result
+
+  Set result = num1 + num2
+
+  Return result
+
+End Function
+
+```
 
 ## Maximum of Two Values
 
