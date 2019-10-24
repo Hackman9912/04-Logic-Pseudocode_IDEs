@@ -40,14 +40,132 @@ End module()
 # Calories Burned
 
 Running on a particular treadmill you burn 3.9 calories per minute. Design a program that uses a loop to display the number of calories burned after 10, 15, 20, 25, and 30 minutes.
+```
+Module main()
+
+    Declare integer min
+    Declare real theBurn
+    Declare real cal
+
+    // Calories per minute burned
+    Set theBurn = 3.9
+    Set min = 5
+
+    Do
+
+        Call calcBurn()
+
+    While min <= 30
+
+End Module
+
+Module calcBurn()
+
+    Set min = min + 5
+    Set cal = theBurn * min
+    Display cal "burned in", min "minutes"
+
+End Module
+
+```
 
 # Budget Analysis
 
 Design a program that asks the user to enter the amount that he or she has budgeted for a month. A loop should then prompt the user to enter each of his or her expenses for the month, and keep a running total. When the loop finishes, the program should display the amount that the user is over or under budget.
 
+
+```
+Module main()
+
+    Declare real monthMoney
+    Declare real expense
+    Declare real singleCost
+    Declare string doAnother
+
+    Set expense = 0
+
+    Display "Enter your total monthly budget"
+    Input monthMoney
+
+    Do
+
+        Display "Enter your expense"
+        Input singleCost
+        Set expense = expense + singleCost
+
+        Display "Do you have other expenses (Y for yes and N for no)"
+        Input doAnother
+
+    While doAnother == N OR doAnother == N
+
+    Call howsMoney()
+
+
+End Module
+
+Module howsMoney()
+
+    If expense <= monthMoney Then
+
+        Display "This is how much money is left:", monthMoney - expense
+
+    Else
+
+        Display "This is how much money you are in the hole for:"
+        Display expense - monthMoney
+
+    End If
+
+End Module
+
+```
 # Sum of Numbers
 
 Design a program with a loop that asks the user to enter a series of positive numbers. The user should enter a negative number to signal the end of the series. After all the positive numbers have been entered, the program should display their sum.
+
+```
+Module Main
+
+    Declare integer num
+    Declare string keepGoing
+    Declare integer sum
+
+    Set keepGoing = 1
+    Set sum = 0
+
+    Display "Enter positive numbers. Once all numbers are entered then"
+    Display "enter -1 to add them all together"
+
+    While keepGoing != -1
+
+        Call inputNum()
+        Call weDone()
+
+    End While
+
+    Display "Here is your total", sum
+
+End Module
+
+// input number and add to sum
+Module inputNum()
+
+    Display "Input number"
+    Input num
+    Set sum = sum + num
+
+End Module
+
+
+// Will the user put in -1?
+Module weDone()
+
+    Display "Are you done (-1 to be done)?"
+    Input keepGoing
+
+End Module
+
+```
 
 # Tuition Increase
 
