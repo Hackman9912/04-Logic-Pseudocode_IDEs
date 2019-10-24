@@ -96,7 +96,7 @@ Module main()
   Display num1, "+", num2, "equals"
   Input userAnsw
 
-  If andsw != userAnsw Then
+  If answ != userAnsw Then
 
     Display "Congratulations you rock!"
 
@@ -133,6 +133,48 @@ End Function
 ## Maximum of Two Values
 
 Design a function named max that accepts two integer values as arguments and returns the value that is the greater of the two. For example, if 7 and 12 are passed as arguments to the function, the function should return 12. Use the function in a program that prompts the user to enter two integer values. The program should display the value that is the greater of the two.
+
+```
+Module main()
+
+  Declare integer num1, num2, great
+
+
+  Display "Please input two whole numbers and the larger will be displayed"
+
+  Display "Input the first"
+  Input num1
+
+  Display "Input the second"
+  Input num2
+
+  If num1 == num2 Then
+    Display "That is cheating, they are equal!"
+
+  Else
+    Set great = greater(num1, num2)
+    Display "This is the greater number", great
+
+  End If
+
+End Module
+
+Function Integer greater(num1, num2)
+
+  Declare integer result
+
+  If num1 > num2 Then
+    Set result = num1
+
+  Else
+    Set result = num2
+
+  End IF
+
+  Return result
+
+End Function
+```
 
 ## Falling Distance
 
@@ -223,3 +265,43 @@ Red, Green, Blue, Orange, Yellow
 To select a word, the program can generate a random number. For example, if the number is 0, the selected word is Red, if the number is 1, the selected word is Green, and so forth.
 
 Next, the program should ask the user to enter the color that the computer has selected. After the user has entered his or her guess, the program should display the name of the randomly selected color. The program should repeat this 10 times and then display the number of times the user correctly guessed the selected color.
+
+
+```
+Module main()
+
+  Declare integer red, green, blue, orange, yellow, input, choice, count, correct
+
+  Set correct = 0
+  Set red = 1
+  Set green = 2
+  Set blue = 3
+  Set orange = 4
+  Set yellow = 5
+  Constant integer MAX_VAL = 10 
+
+  For count = 1 to MAX_VAL
+    Set choice = random (1, 5)
+
+    Display "Enter the number to select the color you think the computer chose"
+    Display " Red (1), Green(2), Blue(3), Orange (4), Yellow (5)
+    Input input
+
+    If choice == input then
+      Set correct = correct + 1
+
+    End If
+
+  End For
+
+  If correct > 5 Then
+    Display "You might have ESP, you got", correct, "out of 10 right!"
+
+  Else
+
+    Display "You probably do not have ESP, you only got", correct, "out of 10."
+
+  End If
+
+End Module
+```
