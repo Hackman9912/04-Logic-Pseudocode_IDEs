@@ -9,6 +9,77 @@ Design a payroll program that prompts the user to enter an employee’s hourly p
 
 A dramatic theater has three seating sections, and it charges the following prices for tickets in each section: section A seats cost $20 each, section B seats cost $15 each, and section C seats cost $10 each. The theater has 300 seats in section A, 500 seats in section B, and 200 seats in section C. Design a program that asks for the number of tickets sold in each section and then displays the amount of income generated from ticket sales. The program should validate the numbers that are entered for each section.
 
+```
+Module main()
+
+	Declare 
+	Integer seatCountA, totalA, seatCountB, totalB, seatCountC, totalC, totalAll
+	integer COSTA = 20
+	integer COSTB = 15
+	integer COSTC = 10
+	integer SEATA = 300
+	integer SEATB = 500
+	integer SEATC = 200
+
+	seatCountA()
+	seatCountB()
+	seatCountC()
+	totalCount()
+
+Module End
+
+Module seatCountA()
+	Display "Please input the number of tickets sold in section A"
+	Input seatCountA
+	If seatCountA > SEATA Then
+		Display "Input the correct number of seats sold for section A."
+		Input seatCountA
+	End If
+
+	Set totalA = seatCountA * COSTA
+	Display "Here is the profit from section A", totalA
+
+	Return
+End Module
+
+Module seatCountB()
+	Display "Please input the number of tickets sold in section B"
+	Input seatCountB
+	If seatCountA > SEATB Then
+		Display "Input the correct number of seats sold for section B."
+		Input seatCountB
+	End If
+
+	Set totalA = seatCountA * COSTB
+	Display "Here is the profit from section B", totalB
+
+	Return
+End Module
+
+Module seatCountC()
+	Display "Please input the number of tickets sold in section A"
+	Input seatCountA
+	If seatCountC > SEATA Then
+		Display "Input the correct number of seats sold for section A."
+		Input seatCountA
+	End If
+
+	Set totalC = seatCountC * COSTC
+	Display "Here is the profit from section C", totalC
+
+	Return
+End Module
+
+Module totalCount()
+
+	Set totalAll = totalA + totalB + totalC
+
+	Display "Here is the total amount of money made from ticket sales:", totalAll
+
+	Return
+	
+End Module
+```
 ## Fat Gram Calculator
 
 Design a program that asks for the number of fat grams and calories in a food item. Validate the input as follows:
@@ -44,7 +115,7 @@ Module main()
 	Display "Please put in the number of calories in your food"
 	Input calories
 
-	While calories < 0 OR calories > fat9
+	While calories < 0 OR calories < fat9
 		Display "Enter a valid number of calories:
 		Input calories
 	End While
