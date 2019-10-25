@@ -77,7 +77,7 @@ Module totalCount()
 	Display "Here is the total amount of money made from ticket sales:", totalAll
 
 	Return
-	
+
 End Module
 ```
 ## Fat Gram Calculator
@@ -122,7 +122,7 @@ Module main()
 
 	Set fatCalories = fat9 / calories
 
-	Display "Your food is", fatCalories, "percent fat"
+	Display "Your food is", fatCalories * 100, "percent fat"
 
 	If fatCalories < 0.3 then
 		Display "Your food is low in fat!"
