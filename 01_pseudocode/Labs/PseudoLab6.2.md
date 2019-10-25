@@ -4,10 +4,71 @@
 
 Design a program that asks the user to enter a store’s sales for each day of the week. The amounts should be stored in an array. Use a loop to calculate the total sales for the week and display the result.
 
+```
+Module main()
+
+   Constant Integer SIZE = 7
+   Declare Integer values[SIZE]
+   Declare Integer count = 0
+   Declare real number
+   Declare real total
+   Declare Integer index
+    
+   
+   Display "Enter a the sales for today or − 1 to quit."
+   Input number
+
+   While (number != − 1 AND count < SIZE)
+       Set values[count] = number
+   End While
+
+   count = count + 1
+   For index = 0 To SIZE − 1
+       Set total = total + numbers[index]
+   End For
+
+   Display "Here is the weekly total sales for the week", total
+
+End Module
+```
+
 ## Lottery Number Generator
 
 Design a program that generates a 7-digit lottery number. The program should have an Integer array with 7 elements. Write a loop that steps through the array, randomly generating a number in the range of 0 through 9 for each element. Then write another loop that displays the contents of the array.
 
+```
+Module main()
+
+    Constant Integer SIZE = 7
+    Declare Integer lotto[SIZE]
+    Declare Integer index
+    Declare Integer count
+    Declare Integer number
+    Declare Integer Output
+    Set count = 0
+
+    While count < SIZE 
+
+        For index = 0 to SIZE - 1
+
+            Set number = random(0, 9)
+            Set lotto[count] = number
+            Set count = count +1
+
+        End For
+
+        For index = 0 to SIZE - 1
+
+            Display lotto[index]
+
+        End For
+    End While
+Module end
+
+
+
+
+```
 ## Rainfall Statistics
 
 Design a program that lets the user enter the total rainfall for each of 12 months into an array. The program should calculate and display the total rainfall for the year, the average monthly rainfall, and the months with the highest and lowest amounts.
