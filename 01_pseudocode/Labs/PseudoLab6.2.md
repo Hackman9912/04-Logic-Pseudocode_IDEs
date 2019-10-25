@@ -73,6 +73,28 @@ Module end
 
 Design a program that lets the user enter the total rainfall for each of 12 months into an array. The program should calculate and display the total rainfall for the year, the average monthly rainfall, and the months with the highest and lowest amounts.
 
+
+```
+Module main()
+   Constant Integer SIZE = 12
+   Declare Real rain[SIZE]
+   Declare String months[SIZE] = "January", "February", "March", "April", "May", "June", "July", "September", "October", "November", "December"
+   Declare Real rainAmt[SIZE]
+   Declare Integer index
+   
+   Set count = 0
+
+
+    For index = 0 to SIZE - 1
+
+        Display "Enter the total rainfall for", months[index]
+        Input rain[index]
+
+    End For
+
+    For index = 0 to SIZE - 1
+
+```
 ## Number Analysis Program
 
 Design a program that asks the user to enter a series of 20 numbers. The program should store the numbers in an array and then display the following data:
