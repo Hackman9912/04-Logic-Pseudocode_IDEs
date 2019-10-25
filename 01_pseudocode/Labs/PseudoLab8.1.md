@@ -14,12 +14,12 @@ Module main()
 
 	Declare 
 	Integer seatCountA, totalA, seatCountB, totalB, seatCountC, totalC, totalAll
-	integer COSTA = 20
-	integer COSTB = 15
-	integer COSTC = 10
-	integer SEATA = 300
-	integer SEATB = 500
-	integer SEATC = 200
+	Constant integer COSTA = 20
+	Constant integer COSTB = 15
+	Constant integer COSTC = 10
+	Constant integer SEATA = 300
+	Constant integer SEATB = 500
+	Constant integer SEATC = 200
 
 	seatCountA()
 	seatCountB()
@@ -31,7 +31,7 @@ Module End
 Module seatCountA()
 	Display "Please input the number of tickets sold in section A"
 	Input seatCountA
-	If seatCountA > SEATA Then
+	If seatCountA > SEATA OR seatCountA < 0  Then
 		Display "Input the correct number of seats sold for section A."
 		Input seatCountA
 	End If
@@ -45,7 +45,7 @@ End Module
 Module seatCountB()
 	Display "Please input the number of tickets sold in section B"
 	Input seatCountB
-	If seatCountA > SEATB Then
+	If seatCountB > SEATB OR seatCountB < 0 Then
 		Display "Input the correct number of seats sold for section B."
 		Input seatCountB
 	End If
@@ -59,7 +59,7 @@ End Module
 Module seatCountC()
 	Display "Please input the number of tickets sold in section A"
 	Input seatCountA
-	If seatCountC > SEATA Then
+	If seatCountC > SEATC OR seatCountC < 0  Then
 		Display "Input the correct number of seats sold for section A."
 		Input seatCountA
 	End If
