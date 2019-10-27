@@ -47,22 +47,20 @@ Module main()
     Declare Integer Output
     Set count = 0
 
-    While count < SIZE 
 
-        For index = 0 to SIZE - 1
+    For index = 0 to SIZE - 1
 
-            Set number = random(0, 9)
-            Set lotto[count] = number
-            Set count = count +1
+        Set number = random(0, 9)
+        Set lotto[count] = number
+        Set count = count +1
 
-        End For
+    End For
 
-        For index = 0 to SIZE - 1
+    For index = 0 to SIZE - 1
 
-            Display lotto[index]
+        Display lotto[index]
 
-        End For
-    End While
+    End For
 Module end
 
 
@@ -78,22 +76,61 @@ Design a program that lets the user enter the total rainfall for each of 12 mont
 Module main()
    Constant Integer SIZE = 12
    Declare Real rain[SIZE]
-   Declare String months[SIZE] = "January", "February", "March", "April", "May", "June", "July", "September", "October", "November", "December"
-   Declare Real rainAmt[SIZE]
+   Declare String months[SIZE] = "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+   Declare Real total
+   Declare Real average
+   Declare Real highest
+   Declare String highestMonth
+   Declare Real lowest
+   Declare String lowestMonth
    Declare Integer index
    
    Set count = 0
 
-
+// get the rain amount
     For index = 0 to SIZE - 1
 
         Display "Enter the total rainfall for", months[index]
         Input rain[index]
 
     End For
-
+// get the total rain
     For index = 0 to SIZE - 1
 
+        Set total = total + rain[index]
+    
+    End For
+// get the average for the year
+    Set average = total/SIZE
+
+    Set lowest = rain[0]
+// get the lowest and lowest month
+    For index = 1 to SIZE - 1
+        If rain[index] < lowest Then
+            Set lowest = rain[index]
+            Set lowestMonth = months[index]
+        End If
+    End For
+
+    Set highest = rain[0]
+// get the highest and highest month
+    For index = 1 to SIZE - 1
+        If rain[index] > highest Then
+            Set highest = rain[index]
+            Set highestMonth = months[index]
+        End If
+    End For
+
+Display "Here is the yearly total rainfall", total
+Display "Here is the average monthly rainfall for the year", average
+Display "Here is the highest month of rainfall and the amount"
+Display highestMonth
+Dislpay highest
+Display "Here is the lowest month of rainfall and the amount"
+Display lowestMonth
+Display lowest
+
+End Module
 ```
 ## Number Analysis Program
 
