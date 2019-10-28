@@ -145,6 +145,57 @@ The total of the numbers in the array
 The average of the numbers in the array
 ```
 
+```
+Module Main
+
+    Declare Constant integer SIZE = 20
+    eclare Real numbers[SIZE]
+    Declare real average
+    Declare real highest
+    Declare real lowest
+    Declare real total
+
+// Input values
+    For index = 0 to SIZE - 1
+        Display "Please enter number" ,index+1, "of 20"
+        Input numbers[index]
+    End For
+
+
+// Get total
+    For index = 0 to SIZE - 1
+        Set total = total + number[index]
+    End For
+
+// Get average
+    Set average = total/SIZE
+
+// Get Lowest
+    Set lowest = number[0]
+
+    For index = 1 to SIZE - 1
+        If number[index] < lowest Then
+            Set lowest = number[index]
+        End If
+    End For
+
+// Get highest
+    Set highest = number[0]
+
+    For index = 1 to SIZE - 1
+        If number[index] > highest Then
+            Set highest = number[index]
+        End If
+    End For
+
+// Display the answers    
+    Display "The lowest number is" lowest
+    Display "The highest number is" highest
+    Display "Total of the numbers is" total
+    Display "The average of the numbers is" average
+    
+End Module
+```
 ## Charge Account Validation
 
 Design a program that asks the user to enter a charge account number. The program should determine whether the number is valid by comparing it to the following list of valid charge account numbers:
